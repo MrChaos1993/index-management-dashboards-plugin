@@ -8,6 +8,7 @@ import AllocationUIAction from "./AllocationUIAction";
 import CloseUIAction from "./CloseUIAction";
 import DeleteUIAction from "./DeleteUIAction";
 import ForceMergeUIAction from "./ForceMergeUIAction";
+import RepackUIAction from "./RepackUIAction";
 import IndexPriorityUIAction from "./IndexPriorityUIAction";
 import NotificationUIAction from "./NotificationUIAction";
 import OpenUIAction from "./OpenUIAction";
@@ -25,6 +26,7 @@ export {
   CloseUIAction,
   DeleteUIAction,
   ForceMergeUIAction,
+  RepackUIAction,
   IndexPriorityUIAction,
   NotificationUIAction,
   OpenUIAction,

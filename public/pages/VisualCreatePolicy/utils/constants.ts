@@ -11,6 +11,7 @@ export enum ActionType {
   Close = "close",
   Delete = "delete",
   ForceMerge = "force_merge",
+  Repack = "repack",
   IndexPriority = "index_priority",
   Notification = "notification",
   Open = "open",
@@ -88,6 +89,11 @@ export const DEFAULT_DELETE = {
 export const DEFAULT_FORCE_MERGE = {
   force_merge: {
     max_num_segments: 1,
+  },
+};
+export const DEFAULT_REPACK = {
+  repack: {
+    new_codec: "zlib",
   },
 };
 export const DEFAULT_INDEX_PRIORITY = {
@@ -201,6 +207,7 @@ export const actions = [
   DEFAULT_CLOSE,
   DEFAULT_DELETE,
   DEFAULT_FORCE_MERGE,
+  DEFAULT_REPACK,
   DEFAULT_INDEX_PRIORITY,
   DEFAULT_NOTIFICATION,
   DEFAULT_OPEN,

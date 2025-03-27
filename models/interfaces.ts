@@ -334,6 +334,12 @@ export interface ForceMergeAction extends Action {
   };
 }
 
+export interface RepackAction extends Action {
+  repack: {
+    new_codec?: string;
+  };
+}
+
 export interface ReadOnlyAction extends Action {
   read_only: {};
 }

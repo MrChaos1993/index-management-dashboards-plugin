@@ -11,6 +11,7 @@ import {
   DEFAULT_CLOSE,
   DEFAULT_DELETE,
   DEFAULT_FORCE_MERGE,
+  DEFAULT_REPACK,
   DEFAULT_INDEX_PRIORITY,
   DEFAULT_NOTIFICATION,
   DEFAULT_OPEN,
@@ -28,6 +29,7 @@ import {
   CloseUIAction,
   DeleteUIAction,
   ForceMergeUIAction,
+  RepackUIAction,
   IndexPriorityUIAction,
   NotificationUIAction,
   OpenUIAction,
@@ -79,6 +81,8 @@ export const getUIAction = (actionType: string): UIAction<any> => {
       return new DeleteUIAction(DEFAULT_DELETE);
     case ActionType.ForceMerge:
       return new ForceMergeUIAction(DEFAULT_FORCE_MERGE);
+    case ActionType.Repack:
+      return new RepackUIAction(DEFAULT_REPACK);
     case ActionType.IndexPriority:
       return new IndexPriorityUIAction(DEFAULT_INDEX_PRIORITY);
     case ActionType.Notification:
@@ -129,6 +133,7 @@ class ActionRepository {
     close: [CloseUIAction, DEFAULT_CLOSE],
     delete: [DeleteUIAction, DEFAULT_DELETE],
     force_merge: [ForceMergeUIAction, DEFAULT_FORCE_MERGE],
+    repack: [RepackUIAction, DEFAULT_REPACK],
     index_priority: [IndexPriorityUIAction, DEFAULT_INDEX_PRIORITY],
     notification: [NotificationUIAction, DEFAULT_NOTIFICATION],
     open: [OpenUIAction, DEFAULT_OPEN],
